@@ -1,4 +1,4 @@
-/* 6. Banner */
+
 .banner-bg {
     padding: 295px 0 273px;
     background-position: center;
@@ -79,7 +79,7 @@
     margin-right: 5px;
 }
 
-/* 7. Up-coming */
+
 .ucm-bg {
     padding: 120px 0 70px;
     background-position: center;
@@ -484,7 +484,7 @@
     color: #e4d804;
 }
 
-/* 8. Services */
+
 .services-bg {
     background-position: center;
     background-size: cover;
@@ -605,7 +605,6 @@
 }
 
 
-/* 12. Live-show */
 .live-bg {
     background-position: left center;
     background-size: cover;
