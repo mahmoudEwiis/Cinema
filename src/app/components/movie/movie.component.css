@@ -79,7 +79,6 @@
     margin-bottom: 50px;
 }
 
-/* 2 */
 .movie-bg {
     background-position: top center;
     background-size: cover;
@@ -246,7 +245,6 @@
 }
 
 
-/* 3 */
 .pagination-wrap ul {
     display: flex;
     align-items: center;
