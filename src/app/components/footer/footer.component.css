@@ -1,0 +1,459 @@
+.newsletter-bg {
+    background-position: center;
+    background-size: cover;
+}
+
+.newsletter-inner-wrap {
+    padding: 45px 80px;
+}
+
+.newsletter-content h4 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #171d22;
+    margin-bottom: 0;
+}
+
+.newsletter-content p {
+    margin-bottom: 0;
+    color: #171d22;
+}
+
+.newsletter-form {
+    position: relative;
+}
+
+.newsletter-form input {
+    width: 100%;
+    border: 2px solid #faf9f7;
+    background: #fff;
+    box-shadow: 0px 3px 4px 0px rgba(30, 30, 30, 0.17);
+    padding: 17px 25px;
+    padding-right: 215px;
+    border-radius: 4px;
+}
+
+.newsletter-form input::placeholder {
+    color: #a0a0a0;
+}
+
+.newsletter-form button {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    border-radius: 4px;
+    background: #171d22;
+    border-color: #171d22;
+    color: #e4d804;
+    font-size: 14px;
+    padding: 15px 34px;
+}
+
+
+.contact-bg {
+    background-position: top center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.widget-title .title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 18px;
+}
+
+.widget-title .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background: #e4d804;
+    border-radius: 1.5px;
+}
+
+.contact-form {
+    padding: 30px 30px 40px;
+    border: 1px solid #232226;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #1f1e24;
+    background: #1f1e24;
+    border-radius: 4px;
+    color: #bcbcbc;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.46);
+    font-weight: 500;
+    padding: 14px 25px;
+    margin-bottom: 30px;
+    transition: .3s linear;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #bcbcbc;
+    font-weight: 500;
+}
+
+.contact-form textarea {
+    min-height: 155px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #e4d804;
+}
+
+.contact-info-wrap {
+    background: #1f1e24;
+    padding: 40px 34px 60px;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.46);
+}
+
+.contact-info-wrap>p {
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #313035;
+}
+
+.contact-info-wrap>p span {
+    font-weight: 600;
+    color: #fafafa;
+}
+
+.contact-info-list ul li {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #313035;
+}
+
+.contact-info-list ul li:last-child {
+    margin-bottom: 0;
+}
+
+.contact-info-list .icon {
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+    text-align: center;
+    font-size: 16px;
+    color: #1f1e24;
+    background: #e4d804;
+    line-height: 46px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.contact-info-list li>p {
+    margin-bottom: 0;
+}
+
+.contact-info-list li>p span {
+    color: #e5e5e5;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+#map {
+    min-height: 439px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+/* 19. Footer */
+.footer-top-wrap {
+    background-image: url(../../../assets/images/bg/footer_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0 55px;
+}
+
+.footer-menu nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-menu nav .navigation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-menu nav .navigation li {
+    margin-right: 27px;
+}
+
+.footer-menu nav .navigation li:last-child {
+    margin-right: 0;
+}
+
+.footer-menu nav .navigation li a {
+    display: block;
+    text-transform: uppercase;
+    color: #c3c3c3;
+    font-weight: 700;
+    padding: 10px 10px;
+    line-height: 1;
+}
+
+.footer-search form {
+    min-width: 285px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.footer-search form input {
+    width: 100%;
+    border: none;
+    background: #12151e;
+    color: #fff;
+    padding: 14px 20px;
+    font-size: 12px;
+    border-radius: 30px;
+    padding-right: 60px;
+    box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+}
+
+.footer-search form input::placeholder {
+    color: #656870;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.footer-search form button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    font-size: 12px;
+    color: #e4d804;
+    padding: 0;
+}
+
+.footer-search form button::before {
+    content: "|";
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #656870;
+    opacity: .34;
+}
+
+.footer-menu-wrap {
+    position: relative;
+    padding-bottom: 35px;
+}
+
+.footer-menu-wrap::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(18, 21, 30);
+    box-shadow: 0px 3px 0px 0px rgba(143, 143, 143, 0.14);
+}
+
+.quick-link-list ul,
+.footer-social ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quick-link-list ul li {
+    margin-right: 50px;
+    margin: 5px 50px 5px 0px;
+}
+
+.quick-link-list ul li:last-child {
+    margin-right: 0px;
+}
+
+.quick-link-list ul li a {
+    color: #bcbcbc;
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.footer-social ul {
+    justify-content: flex-end;
+}
+
+.footer-social ul li {
+    margin-right: 8px;
+}
+
+.footer-social ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-social ul li a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+    background-color: rgb(18, 21, 30);
+    text-align: center;
+    line-height: 36px;
+    font-size: 12px;
+    color: #bcbcbc;
+}
+
+.footer-quick-link-wrap {
+    padding-top: 40px;
+}
+
+.copyright-wrap {
+    background: #171b22;
+    padding: 25px 0;
+}
+
+.copyright-text>p {
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #bcbcbc;
+    line-height: 24px;
+}
+
+.payment-method-img img {
+    max-width: 100%;
+}
+
+button.btn:hover {
+    background: #e4d804;
+    color: #12151e;
+}
+
+.footer-social ul li a:hover,
+.footer-menu nav .navigation li a:hover,
+.quick-link-list ul li a:hover {
+    color: #e4d804;
+}
+
+@media (max-width: 1500px) {
+
+    .footer-search form {
+        min-width: 240px;
+    }
+
+
+}
+
+@media (max-width: 1199.98px) {
+
+    .newsletter-inner-wrap {
+        padding: 45px 0px;
+    }
+
+    .footer-menu nav .navigation li {
+        margin-right: 15px;
+    }
+
+    .footer-search form {
+        min-width: 240px;
+    }
+
+    .quick-link-list ul li {
+        margin: 5px 40px 5px 0px;
+    }
+
+
+}
+
+@media (max-width: 991.98px) {
+
+    .newsletter-content {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .newsletter-inner-wrap {
+        padding: 55px 80px;
+    }
+
+    .footer-logo {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .newsletter-inner-wrap {
+        padding: 55px 0px;
+    }
+
+    .newsletter-form input {
+        padding: 17px 30px;
+        padding-right: 30px;
+    }
+
+    .newsletter-form button {
+        position: initial;
+        margin-top: 15px;
+    }
+
+    .newsletter-form {
+        text-align: center;
+    }
+
+    .footer-menu nav {
+        display: block;
+    }
+
+    .footer-search form {
+        min-width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .quick-link-list ul li {
+        margin: 5px 30px 5px 0px;
+    }
+
+    .footer-social ul {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .copyright-text {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .scroll-top {
+        right: 15px !important;
+    }
+
+    .scroll-top.open {
+        bottom: 15px !important;
+    }
+
+    .footer-menu nav .navigation {
+        justify-content: center;
+    }
+
+    .quick-link-list ul, .footer-social ul {
+        justify-content: center;
+    }
+
+}

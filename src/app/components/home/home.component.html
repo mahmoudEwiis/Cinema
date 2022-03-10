@@ -1,0 +1,224 @@
+<!-- banner-area -->
+<section class="banner-area banner-bg" style="background-image: url(assets/images/banner/banner_bg01.jpg);">
+    <div class="container custom-container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-8">
+                <div class="banner-content">
+                    <h6 class="sub-title " data-wow-delay=".2s" data-wow-duration="1.8s"
+                        style="visibility: visible; animation-duration: 1.8s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        Movflx</h6>
+                    <h2 class="title " data-wow-delay=".4s" data-wow-duration="1.8s"
+                        style="visibility: visible; animation-duration: 1.8s; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        Unlimited
+                        <span>Movie</span>, TVs Shows, &amp; More.
+                    </h2>
+                    <div class="banner-meta " data-wow-delay=".6s" data-wow-duration="1.8s"
+                        style="visibility: visible; animation-duration: 1.8s; animation-delay: 0.6s; animation-name: fadeInUp;">
+                        <ul>
+                            <li class="quality">
+                                <span>Pg 18</span>
+                                <span>hd</span>
+                            </li>
+                            <li class="category">
+                                <a href="#">Romance,</a>
+                                <a href="#">Drama</a>
+                            </li>
+                            <li class="release-time">
+                                <span><i class="far fa-calendar-alt"></i> 2021</span>
+                                <span><i class="far fa-clock"></i> 128 min</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a (click)="showModel($event)" href="#" data-toggle="modal" data-target="#trailer-modal" class="banner-btn btn popup-video" style="visibility: visible;">
+                        <i class="fas fa-play"></i> Watch Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- banner-area-end -->
+
+
+<!-- up-coming-movie-area -->
+<section class="ucm-area ucm-bg" style="background-image: url(assets/images/bg/ucm_bg.jpg);">
+    <div class="ucm-bg-shape" style="background-image: url(assets/images/bg/ucm_bg_shape.png);"></div>
+    <div class="container">
+        <div class="row align-items-end position-relative" style="margin-bottom: 55px;">
+            <div class="col-lg-6">
+                <div class="section-title text-center text-lg-start">
+                    <span class="sub-title">ONLINE STREAMING</span>
+                    <h2 class="title">Upcoming Movies</h2>
+                </div>
+            </div>
+        </div>
+        <owl-carousel-o [options]="customOptions" #owlElement>
+
+            <ng-container *ngFor="let movie of movies">
+
+                <ng-template carouselSlide [id]="movie.id" style="width: 256.5px; margin-right: 30px;">
+                    <div class="movie-item mb-50">
+                        <div class="movie-poster">
+                            <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="">
+                            <ul class="overlay-btn">
+                                <li class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <a (click)="showMovieTrailer($event , movie.media_type , movie.id  )" href="#" class="popup-video btn">
+                                        Watch Now
+                                    </a>
+                                </li>
+                                <li>
+                                    <a (click)="goToMovieDetails(movie.id , movie.media_type)" class="btn">
+                                        Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="movie-content">
+                            <div class="top">
+                                <h5 class="title">
+                                    <a (click)="goToMovieDetails(movie.id)">{{ movie.original_title == undefined ?
+                                        movie.original_name : movie.original_title }}</a>
+                                </h5>
+                                <span class="date">{{movie.release_date == undefined ? (movie.first_air_date | getyear)
+                                    : (movie.release_date | getyear)}}</span>
+                            </div>
+                            <div class="bottom">
+                                <ul>
+                                    <li>
+                                        <span class="quality">hd</span>
+                                    </li>
+                                    <li>
+                                        <span class="rating">
+                                            <i class="fas fa-thumbs-up"></i> {{movie.vote_average}}
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
+</section>
+<!-- up-coming-movie-area-end -->
+
+<!-- services-area -->
+<section class="services-area services-bg" style="background-image: url(assets/images/bg/services_bg.jpg);">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="services-img-wrap">
+                    <img src="assets/images/services_img.jpg" alt="">
+                    <a href="assets/images/services_img.jpg" class="download-btn" download>
+                        Download <img src="assets/images/download.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="services-content-wrap">
+                    <div class="section-title title-style-two mb-20">
+                        <span class="sub-title">Our Services</span>
+                        <h2 class="title">Download Your Shows Watch Offline.</h2>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod tempor.
+                        There are many variations of passages of loremIpsum available, but the
+                        majority have suffered alteration in some injected humour.
+                    </p>
+                    <div class="services-list">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-television"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>Enjoy on Your TV.</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consecetur
+                                        adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-video-camera"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>Watch Everywhere.</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consecetur
+                                        adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- services-area-end -->
+
+
+<!-- live-area -->
+<section class="live-area live-bg fix" style="background-image: url(assets/images/bg/live_bg.jpg);">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-5 col-lg-6">
+                <div class="section-title title-style-two mb-25">
+                    <span class="sub-title">ONLINE STREAMING</span>
+                    <h2 class="title">Live Movie & TV Shows For Friends & Family</h2>
+                </div>
+                <div class="live-movie-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consecetur adipiscing elseddo
+                        eiusmod There are many variations of passages of lorem Ipsum
+                        available, but the majority have suffered alteration.
+                    </p>
+                    <div class="live-fact-wrap">
+                        <div class="resolution">
+                            <h2>HD 4K</h2>
+                        </div>
+                        <div class="active-customer">
+                            <h4>
+                                20K+
+                            </h4>
+                            <p>Active Customer</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn popup-video">
+                        <i class="fas fa-play"></i> Watch Now
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-6">
+                <div class="live-movie-img wow fadeInRight" data-wow-delay=".2s" data-wow-duration="1.8s">
+                    <img src="assets/images/live_img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- live-area-end -->
+
+
+<!-- Modal trailer -->
+<div class="modal fade" id="trailer-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <i (click)="closeModel(iframe)" class="fas fa-close" data-dismiss="modal" aria-label="Close"></i>
+            <iframe  #iframe width="560" height="415" [src]="videoUrl | safe:'resourceUrl'">
+            </iframe>
+        </div>
+    </div>
+</div>
+<!-- Modal trailer-end -->

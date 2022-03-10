@@ -1,0 +1,118 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(app/style/structure.css);
+
+body {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #171d22;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #e4d804;
+    outline: 1px solid #151f30;
+}
+
+.custom-container {
+    max-width: 1420px;
+
+}
+
+#trailer-modal {
+    background-color: rgba(23, 26, 33, .95);
+}
+
+#trailer-modal .modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: none;
+    outline: 0;
+    margin: 0;
+    min-width: 700px;
+}
+
+#trailer-modal .modal-dialog .modal-content {
+    background: 0 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+#trailer-modal .modal-dialog .modal-content i {
+    font-size: 22px;
+    margin-bottom: 7px;
+    cursor: pointer;
+    text-align: end;
+    color: #e4d804;
+}
+
+#trailer-modal .modal-dialog .modal-content iframe {
+    width: 100%;
+}
+
+
+.show.active {
+    display: block;
+    padding-right: 17px;
+}
+
+.modal-backdrop {
+    z-index: 1;
+}
+
+.modal-open .header-top {
+    z-index: 2;
+}
+
+
+
+@media (max-width: 1500px) {
+    .custom-container {
+        max-width: 1330px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .custom-container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .custom-container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #trailer-modal .modal-dialog .modal-content i {
+        margin: auto;
+        margin-left: 29pc;
+        margin-bottom: 8px;
+    }
+
+    #trailer-modal .modal-dialog .modal-content iframe {
+        width: 48%;
+        height: 200px;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .custom-container {
+        max-width: 540px;
+    }
+
+}

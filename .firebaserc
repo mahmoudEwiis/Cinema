@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "movie-3f754": {
+      "hosting": {
+        "Cinema": [
+          "movie-3f754"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "movie-3f754"
+  }
+}
