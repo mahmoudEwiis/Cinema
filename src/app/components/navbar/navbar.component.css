@@ -309,7 +309,6 @@
 }
 
 
-/* 3. Search modal */
 #search-modal {
     background-color: rgba(23, 26, 33, .95);
 }
@@ -384,9 +383,6 @@
     z-index: 2;
 }
 
-
-
-/* 4. Mobile-menu */
 .nav-outer .mobile-nav-toggler {
     position: relative;
     float: right;
